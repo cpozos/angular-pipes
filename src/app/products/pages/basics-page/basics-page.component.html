@@ -1,5 +1,5 @@
 <p-panel header="Basic Pipes" class="p-1">
-  <p>Included in common module</p>
+  <p>Included in common module.</p>
 </p-panel>
 
 <div class="grid">
@@ -21,7 +21,7 @@
     </p-card>
   </div>
 
-  <div class="col-12 md:col-4">
+  <div class="col-12 md:col-6">
     <p-card header="titlecase">
       <ol>
         <li>Date</li>
@@ -35,13 +35,14 @@
       <ol>
         <li>Date | date:'long':'GMT-6'</li>
         <li>Date | date:'long':'GMT-4'</li>
-        <li>Date | date:'long':'':'es-HN'</li>
+        <li>Date | date:'long':'':'de'</li>
+        <li>Date | date:'long':'':'fr-CA'</li>
       </ol>
     </p-card>
   </div>
 
   <div class="col-12 md:col-6">
-    <p-card header="Custo Date">
+    <p-card header="Custom Date">
       <ol>
         <li>{{ customDate }}</li>
         <li>{{ customDate | date }}</li>
@@ -54,7 +55,8 @@
       <ol>
         <li>{{ customDate | date:'long':'GMT-6' }}</li>
         <li>{{ customDate | date:'long':'GMT-4' }}</li>
-        <li>{{ customDate | date:'long':'':'es-HN' }}</li>
+        <li>{{ customDate | date:'long':'':'de' }}</li>
+        <li>{{ customDate | date:'long':'':'fr-CA' }}</li>
       </ol>
     </p-card>
   </div>

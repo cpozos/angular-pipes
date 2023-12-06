@@ -1,1 +1,24 @@
-<p>numbers-page works!</p>
+<p-panel header="Number Pipes" class="p-1">
+  <p>Included in common module.</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Number">
+      {{ 1234567.8943 | number}}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Currency">
+      <p>{{ 1234567.8943 | currency:'EUR':'symbol-narrow':'1.2-4':'fr-CA' }}</p>
+      <p>{{ 1234567.8943 | currency:'EUR':'symbol-narrow':'1.1-2':'es-MX' }}</p>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Percentage 1.2-2">
+      {{ 0.48934 | percent:'1.2-2' }}
+    </p-card>
+  </div>
+</div>
